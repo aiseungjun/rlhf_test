@@ -1,0 +1,21 @@
+dataset:
+  data_dir: '/Dataset'
+  augment: True
+  batch_size: 4
+  n_threads: 16
+
+model:
+  name: 'rcan'
+
+train:
+  epochs: 100
+  loss: 'edsr'
+  optimizer:
+    name: 'Adam'
+    lr: 2.e-3
+  scheduler:
+    name: 'StepLR'
+    step_size: 5
+    gamma: 0.5
+
+# seed: 1

@@ -1,0 +1,17 @@
+
+common:
+  device: 'cuda'
+  model_name: 'efficientnet_v2_l'
+  loss: 'MSELoss'
+  optimizer: 'Adam'
+  lr: 0.002
+  scheduler:
+    name: 'StepLR'
+    step_size: 10
+    gamma: 0.5
+
+experiment:
+  kfold: False
+  n_splits: 5
+  transform: None
+  num_epochs: 100

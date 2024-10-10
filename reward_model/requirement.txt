@@ -1,0 +1,3 @@
+tifffile
+torch
+torchvision
